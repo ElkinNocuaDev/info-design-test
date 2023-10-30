@@ -24,7 +24,7 @@ function Datatramo({ initialDate, finalDate }) {
       };
 
       try {
-        const res = await fetch('http://localhost:4000/tramos', requestOptions);
+        const res = await fetch('https://info-design-back.onrender.com/tramos', requestOptions);
         const responseData = await res.json();
 
         if (Array.isArray(responseData)) {

@@ -15,7 +15,7 @@ function Clientetramo({ initialDate, finalDate }) {
       };
 
       try {
-        const res = await fetch('http://localhost:4000/cliente', requestOptions);
+        const res = await fetch('https://info-design-back.onrender.com/cliente', requestOptions);
         const responseData = await res.json();
 
         if (Array.isArray(responseData)) {
